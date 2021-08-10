@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<style>
+    form>table {
+        height: 250px;
+        text-align: center;
+        margin: auto;
+    }
+    
+    body {
+        line-height: 3em;
+        background-color: royalblue;
+    }
+    
+    button:hover {
+        background-color: red;
+    }
+    
+    form {
+        padding-left: 180px;
+    }
+    
+    body {
+        background-image: url("https://images.pexels.com/photos/2399840/pexels-photo-2399840.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: orange;
+        position: relative;
+        z-index: 1;
+        height: 100%;
+    }
+    
+    body::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.8;
+        z-index: -1;
+    }
+</style>
+
+<body>
+    <form action="" method="POST">
+        <table>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" placeholder="first_name" id="firstname" name="FIRST_NAME" size="24" required="required"> </td>
+
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" placeholder="last_name" id="secondname" name="LAST_NAME" size="24" required="required"></td>
+            </tr>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" placeholder="username" id="username" name="USERNAME" size="24" required="required"> </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" placeholder="email" id="email" name="EMAIL" size="50" minlength="8" maxlength="50" required="required">
+                </td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="number" placeholder="phone_number" id="phone" name="PHONE_NUMBER" size="14" required="required"> </td>
+            </tr>
+
+            <tr>
+                <td>Password</td>
+                <td><input type="text" placeholder="password" id="pass" name="PASSWORD" size="20" required="required"> </td>
+            </tr>
+            <tr>
+                <td><button type="submit"><a href="mainly.html">CREATE ACCOUNT
+                </a></button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

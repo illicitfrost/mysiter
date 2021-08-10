@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<meta name="robots" content="noindex">
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Inventory</title>
+    <style>
+        body {
+            background-image: url("https://images.pexels.com/photos/2399840/pexels-photo-2399840.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: orange;
+            position: relative;
+            z-index: 1;
+            height: 100%;
+            line-height: 3em;
+        }
+        
+        body::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.8;
+            z-index: -1;
+        }
+        
+        h1 {
+            color: cyan;
+            text-align: center;
+        }
+        
+        form>table {
+            height: 250px;
+            text-align: center;
+            margin: auto;
+        }
+        
+        button:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>INVENTORY</h1>
+        <table>
+            <tr>
+                <td>SMARTPHONES_SOLD</td>
+                <td>
+                    <input type="text" placeholder="" size="5"></td>
+            </tr>
+            <tr>
+                <td>SALES_FROM_SMARTPHONES</td>
+                <td>
+                    <input type="text" placeholder="" size="10"> </td>
+            </tr>
+            <tr>
+                <td>TELEVISIONS_SOLD</td>
+                <td>
+                    <input type="text" placeholder="" size="5"></td>
+            </tr>
+            <tr>
+                <td>SALES_FROM_TELEVISIONS</td>
+                <td>
+                    <input type="text" placeholder="" size="10"> </td>
+            </tr>
+            <tr>
+                <td>FRIDGES_SOLD</td>
+                <td>
+                    <input type="text" placeholder="" size="5"> </td>
+            </tr>
+            <tr>
+                <td>SALES_FROM_FRIDGES</td>
+                <td>
+                    <input type="text" placeholder="" size="10"> </td>
+            </tr>
+            <tr>
+                <td>TOTAL_SALES</td>
+                <td>
+                    <input type="text" placeholder="" size="15"> </td>
+            </tr>
+            <tr>
+                <td>RETURNED_PRODUCTS</td>
+                <td>
+                    <input type="text" placeholder="" size="5"> </td>
+            </tr>
+            <tr>
+                <td>DEFECTIVE_PRODUCTS</td>
+                <td>
+                    <input type="text" placeholder="" size="5"> </td>
+            </tr>
+            <tr>
+                <td>PRODUCTS_OUT_STOCK</td>
+                <td>
+                    <input type="text" placeholder="" size="5"> </td>
+            </tr>
+            <tr>
+                <td>PRE-ORDERS</td>
+                <td>
+                    <input type="text" placeholder="" size="5"></td>
+            </tr>
+            <tr>
+                <td><button type="submit" value="submit">SUBMIT
+        </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <form>
+        <h1>CUSTOMERS</h1>
+        <table>
+            <tr>
+                <td>FIRST_NAME</td>
+                <td>
+                    <input type="text" placeholder="" size="15"> </td>
+            </tr>
+            <tr>
+                <td>LAST_NAME</td>
+                <td>
+                    <input type="text" placeholder="" size="15"> </td>
+            </tr>
+            <tr>
+                <td>PHONE_NUMBER</td>
+                <td>
+                    <input type="number" placeholder="" size="15"> </td>
+            </tr>
+            <tr>
+                <td>CARD_NUMBER</td>
+                <td>
+                    <input type="text" placeholder="" size="20"> </td>
+            </tr>
+            <tr>
+                <td>FIRST_PURCHASE</td>
+                <td>
+                    <input type="date " placeholder="" size="15"> </td>
+            </tr>
+            <tr>
+                <td>AMOUNT_SPENT</td>
+                <td>
+                    <input type="text" placeholder="" size="10"> </td>
+            </tr>
+            <tr>
+                <td><button type="submit" value="submit">SUBMIT
+        </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <form>
+        <h1>PRODUCTS</h1>
+        <table>
+            <tr>
+                <td>PRODUCT</td>
+                <td>
+                    <input type="text" placeholder="" size="20"> </td>
+            </tr>
+            <tr>
+                <td>QUANTITY</td>
+                <td>
+                    <input type="number" placeholder="" size="5"> </td>
+            </tr>
+            <tr>
+                <td>CATEGORY</td>
+                <td>
+                    <input type="text" placeholder="" size="20"> </td>
+            </tr>
+            <tr>
+                <td>PRICE</td>
+                <td>
+                    <input type="text" placeholder="" size="10"> </td>
+            </tr>
+            <tr>
+                <td><button type="submit" value="submit">SUBMIT
+        </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <form>
+        <h1>SALES</h1>
+        <table>
+            <tr>
+                <td>DATE</td>
+                <td>
+                    <input type="date" placeholder="" size="15"> </td>
+            </tr>
+            <tr>
+                <td>PRODUCT</td>
+                <td>
+                    <input type="text" placeholder="" size="20"> </td>
+            </tr>
+            <tr>
+                <td>CATEGORY</td>
+                <td>
+                    <input type="text" placeholder="" size="20"> </td>
+            </tr>
+            <tr>
+                <td>STORE</td>
+                <td>
+                    <input type="text" placeholder="" size="20"> </td>
+            </tr>
+            <tr>
+                <td>TRACKING_NUMBER</td>
+                <td>
+                    <input type="text" placeholder="" size="20"> </td>
+            </tr>
+            <tr>
+                <td>PRICE</td>
+                <td>
+                    <input type="text" placeholder="" size="10"> </td>
+            </tr>
+            <tr>
+                <td><button type="submit" value="submit">SUBMIT
+        </button>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        line-height: 2em;
+        font-size: large;
+    }
+    
+    body {
+        background-image: url("https://images.pexels.com/photos/2399840/pexels-photo-2399840.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: orange;
+        position: relative;
+        z-index: 1;
+        height: 100%;
+    }
+    
+    body::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.8;
+        z-index: -1;
+    }
+</style>
+
+<body>
+    <h1>CONTACTS</h1>
+    <p>
+        <h2>Telephone</h2>
+        <b>0712654378</b><br>
+        <b>0798654312</b><br>
+        <h2>Email</h2>
+        <b>kenyatronics@gmail.com</b><br>
+        <b>OR</b><br>
+        <b>kenyatronics@yahoo.com</b>
+    </p>
+</body>
+
+</html>

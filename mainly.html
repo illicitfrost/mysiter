@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>BRIAN</title>
+    <style id="jsbin-css">
+        body {
+            background-image: url("https://images.pexels.com/photos/2399840/pexels-photo-2399840.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: orange;
+            position: relative;
+            z-index: 1;
+            height: 100%;
+        }
+        
+        body::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.8;
+            z-index: -1;
+        }
+        
+        li {
+            list-style-type: none;
+            float: left;
+            width: 25%;
+            color: red;
+        }
+        
+        a {
+            color: white;
+            font-weight: bolder;
+        }
+        
+        fieldset {
+            margin: 5px;
+            border-radius: 2rem;
+        }
+        
+        section {
+            float: left;
+            width: 50%;
+        }
+        
+        img {
+            height: 80px;
+            width: 100px;
+        }
+        
+        fieldset>div {
+            text-align: center;
+        }
+        
+        @media screen and(min-width:300px) {
+            li {
+                list-style-type: none;
+                float: left;
+                width: 20%;
+            }
+            navbar {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>MY PROJECT</header>
+    <h1>KENYA ELECTRONICS</h1>
+    <navbar>
+        <ul>
+            <li id="About"><a href="about.html">About</a></li>
+            <li id="Contacts"><a href="contacts.html">Contacts</a></li>
+            <li id="Services"><a href="services.html">Services</a></li>
+
+            <li id="Admin">
+                <a href="admin.html">Admin</a>
+            </li>
+        </ul>
+    </navbar>
+    <fieldset>
+
+        <div>
+            <h2>Get To Know Us</h2>
+            <p>
+                Kenya Electronics is a company dealing with electronics.<br> It was started in January 21st 2021 <br> It operates nationwide .
+                <br> We offer both online shopping and physical shopping.
+
+
+
+            </p>
+        </div>
+    </fieldset>
+    <fieldset>
+        <div><img src="https://images.pexels.com/photos/205926/pexels-photo-205926.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+        </div>
+        <div>
+            <h2>Products</h2>
+            <p>
+                WE DEAL WITH MOSTLY ELECTRONICS.<br> Some of the electronics we deal with are:<br> Smartphones
+
+                <br> Televisions
+                <br> Fridges
+                <br>
+                <a href="products.html">See more</a>
+            </p>
+        </div>
+    </fieldset>
+    <fieldset>
+        <div><img src="https://images.pexels.com/photos/2432221/pexels-photo-2432221.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"> </div>
+        <div>
+            <h2>Stores</h2>
+            <p>
+                We are located countrywide to best serve your needs
+                <a href="stores.html">See more</a>
+            </p>
+        </div>
+    </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

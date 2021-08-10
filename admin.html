@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<style>
+    form>table {
+        height: 250px;
+        text-align: center;
+        margin: auto;
+    }
+    
+    body {
+        background-image: url("https://images.pexels.com/photos/2399840/pexels-photo-2399840.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: orange;
+        position: relative;
+        z-index: 1;
+        height: 100%;
+    }
+    
+    body::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.8;
+        z-index: -1;
+    }
+    
+    button:hover {
+        background-color: red;
+    }
+</style>
+
+
+<body>
+    <h1>ADMIN</h1>
+    <br>KINDLY LOGIN TO VIEW AND MAKE CHANGES TO OUR RECORDS<br>
+
+    <button type="button"><a href="adminlogin.html">ADMIN</a></button>
+</body>
+
+</html>
